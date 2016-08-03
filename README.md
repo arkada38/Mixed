@@ -6,5 +6,5 @@ Mixed R project wirh scripts and some data
 * Predicting wine quality using Random Forests
 * Random Forest
 * Regulization of linear regression
-* Cluster analysis
+* Hierarchical cluster analysis
 * Standartization

@@ -1,4 +1,4 @@
-# Cluster analysis
+# Hierarchical cluster analysis
 
 beverage <- read.table("Data_beverage.csv", header = T, sep = ";")
 head(beverage)
