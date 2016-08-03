@@ -7,8 +7,11 @@ names(data) <- c('Weight', 'Price')
 
 summary(data)
 
+Price <- data$Price
+Weight <- data$Weight
+
 # Building a linear regression
-fit <- lm(data$Price ~ data$Weight )
+fit <- lm(Price ~ Weight)
 summary(fit)
 # Coefficients:
 #             Estimate Std. Error t value Pr(>|t|)    
@@ -19,7 +22,7 @@ summary(fit)
 # The model describes the data on 97.83%
 
 
-plot(data$Price ~ data$Weight,
+plot(Price ~ Weight,
      main = "Price ~ Weight",
      sub = "Price = -259.63 + 3721.02 * Weight",
      xlab = "The weight of a diamond (carat)", 
@@ -27,6 +30,13 @@ plot(data$Price ~ data$Weight,
 abline(fit, col = 2)
 
 
+# Predict
+newdata <- data.frame(Weight = c(.15, .18, .23, .33))
+p <- predict(fit, newdata)
+#        1        2        3        4 
+# 298.5278 410.1586 596.2098 968.3123
+newdata$Price <- p
+points(newdata$Weight, y = newdata$Price, type = "p", col = 4, pch = 19)
 
 
 
