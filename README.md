@@ -1,7 +1,7 @@
 # Mixed
 Mixed R project wirh scripts and some data
 
-##Scripts
+## Scripts
 * Linear regression
 * Predicting wine quality using Random Forests
 * Random Forest
