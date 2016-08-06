@@ -2,7 +2,7 @@
 
 beverage <- read.table("Data_beverage.csv", header = T, sep = ";")
 head(beverage)
-summ.3ary(beverage)
+summary(beverage)
 
 beverage$numb.obs <- NULL
 
@@ -102,3 +102,4 @@ library(NbClust)
 NbClust(beverage, method = "kmeans", index = "ball")$Best.nc
 # Number_clusters     Value_Index 
 #           3.000           7.735
+
