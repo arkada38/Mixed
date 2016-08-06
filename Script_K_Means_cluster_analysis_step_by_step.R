@@ -1,11 +1,5 @@
 # K Means cluster analysis (step by step)
 
-# beverage <- read.table("Data_beverage.csv", header = T, sep = ";")
-# head(beverage)
-# summary(beverage)
-# 
-# beverage$numb.obs <- NULL
-
 set.seed(1234)
 
 # quantity of observations in each cluster
@@ -13,7 +7,7 @@ n.obs <- 900
 # standart deviation
 sd.1 <- 0.06
 
-# Generation of clusters
+# Generation of 5 clusters
 x1 <- rnorm(n.obs, mean = .20, sd = sd.1)
 y1 <- rnorm(n.obs, mean = .38, sd = sd.1)
 
@@ -36,7 +30,8 @@ data.0 <- cbind(x.0, y.0)
 
 colnames(data.0) <- c("x", "y")
 
-# Centers of klusters
+# Centers of 5 klusters
+# It must be random
 x.start <- c(.50, .41, .43, .62, .38)
 y.start <- c(.20, .22, .32, .36, .71)
 centers.0 <- cbind(x.start, y.start)
@@ -62,14 +57,16 @@ clus.15 <- kmeans(data.0, centers = clus.14$centers, iter.max = 1, algorithm = "
 
 
 
-# Size of points in plot
+# Size of points for plot
 cex.1 <- .2
-# Colors of clusters
+# Colors of clusters for plot
 col.1 <- c("green", "blue", "cyan", "purple", "darkgoldenrod")
 
 
 
+# Points which must be clustering
 plot(data.0, col = "blue", pch = 19, main = "Iteration 0", cex = cex.1)
+# Centers of 5 klusters
 points(x.start, y.start, col = "red", xlim = c(0, 1), ylim = c(0, 1.1), cex = cex.1 * 9, pch = 19)
 
 plot(data.0, col = col.1[clus.1$cluster], pch = 19, main = "Iteration 1", cex = cex.1)
