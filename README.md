@@ -8,3 +8,4 @@ Mixed R project wirh scripts and some data
 * Regulization of linear regression
 * Hierarchical cluster analysis
 * Standartization
+* K Means cluster analysis (step by step)
