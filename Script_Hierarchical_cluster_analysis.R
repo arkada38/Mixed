@@ -30,3 +30,6 @@ colMeans(beverage[groups==1,]) * 100
 colMeans(beverage[groups==2,]) * 100
 # in the 3rd cluster
 colMeans(beverage[groups==3,]) * 100
+
+# Multidimentional scaling
+plot(beverage.mds, col = groups, xlab = "Index", ylab = "Y")
