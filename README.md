@@ -9,3 +9,4 @@ Mixed R project wirh scripts and some data
 * Hierarchical cluster analysis
 * Standartization
 * K Means cluster analysis (step by step)
+* K Means cluster analysis
