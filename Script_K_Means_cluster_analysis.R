@@ -98,7 +98,7 @@ plot(beverage.mds, col = summ.4$cluster, xlab = "Index", ylab = "Y")
 
 
 library(NbClust)
-# Calinski and Harabasz 1974
+# Ball and Hall 1965
 NbClust(beverage, method = "kmeans", index = "ball")$Best.nc
 # Number_clusters     Value_Index 
 #           3.000           7.735
