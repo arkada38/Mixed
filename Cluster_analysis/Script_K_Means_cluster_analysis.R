@@ -1,6 +1,6 @@
 # K Means cluster analysis
 
-beverage <- read.table("Data_beverage.csv", header = T, sep = ";")
+beverage <- read.table("Datasets/beverage.csv", header = T, sep = ";")
 head(beverage)
 summary(beverage)
 

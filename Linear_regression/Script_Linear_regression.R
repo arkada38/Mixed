@@ -2,7 +2,7 @@
 # http://www.algorithmist.ru/2011/04/linear-regression-with-examples-in-r.html#more
 
 # Reading data from a file
-data <- read.table('Data_diamond.dat')
+data <- read.table('Datasets/diamond.dat')
 names(data) <- c('Weight', 'Price')
 
 summary(data)

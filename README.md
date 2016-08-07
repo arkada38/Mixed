@@ -1,12 +1,15 @@
 # Mixed
-Mixed R project wirh scripts and some data
+Analyzing data in r
 
 ## Scripts
 * Linear regression
-* Predicting wine quality using Random Forests
+  * Linear regression
+  * Regulization of linear regression
 * Random Forest
-* Regulization of linear regression
-* Hierarchical cluster analysis
+  * Random Forest
+  * Predicting wine quality using Random Forests
+* Cluster analysis
+  * Hierarchical cluster analysis
+  * K Means cluster analysis (step by step)
+  * K Means cluster analysis
 * Standartization
-* K Means cluster analysis (step by step)
-* K Means cluster analysis
