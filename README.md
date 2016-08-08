@@ -2,6 +2,7 @@
 Analyzing data in R
 
 ## Scripts
+* Basic statistics
 * Linear regression
 * Random Forest
 * Cluster analysis
