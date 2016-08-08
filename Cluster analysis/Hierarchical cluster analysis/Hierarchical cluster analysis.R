@@ -21,7 +21,7 @@ rect.hclust(clust.beverage, k = 3, border = "red")
 
 # Divide into 3 clusters
 # groups vector contains the cluster number 
-groups <- cutree(clust.beverage, k = 3) 
+groups <- cutree(clust.beverage, k = 3)
 groups
 
 # in the first cluster
@@ -32,4 +32,12 @@ colMeans(beverage[groups==2,]) * 100
 colMeans(beverage[groups==3,]) * 100
 
 # Multidimentional scaling
-plot(beverage.mds, col = groups, xlab = "Index", ylab = "Y")
+beverage.dist <- dist(beverage)
+beverage.mds <- cmdscale(beverage.dist)
+plot(beverage.mds, col = groups, main = "Hierarchical cluster analysis", xlab = "Index", ylab = "Y")
+
+library(NbClust)
+# Ball and Hall 1965
+NbClust(beverage, method = "ward.D", index = "ball")$Best.nc
+# Number_clusters     Value_Index 
+#          3.0000          8.0434

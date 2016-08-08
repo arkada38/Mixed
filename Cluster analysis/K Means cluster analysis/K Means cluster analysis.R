@@ -90,8 +90,8 @@ table(summ.3$cluster, summ.4$cluster)
 # Multidimentional scaling
 beverage.dist <- dist(beverage)
 beverage.mds <- cmdscale(beverage.dist)
-plot(beverage.mds, col = summ.3$cluster, xlab = "Index", ylab = "Y")
-plot(beverage.mds, col = summ.4$cluster, xlab = "Index", ylab = "Y")
+plot(beverage.mds, col = summ.3$cluster, main = "K Means cluster analysis", xlab = "Index", ylab = "Y")
+plot(beverage.mds, col = summ.4$cluster, main = "K Means cluster analysis", xlab = "Index", ylab = "Y")
 
 
 
@@ -102,4 +102,3 @@ library(NbClust)
 NbClust(beverage, method = "kmeans", index = "ball")$Best.nc
 # Number_clusters     Value_Index 
 #           3.000           7.735
-
