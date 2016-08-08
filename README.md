@@ -7,4 +7,4 @@ Analyzing data in R
 * Cluster analysis
   * Hierarchical cluster analysis
   * K Means cluster analysis
-* Standartization
+* Standardization
