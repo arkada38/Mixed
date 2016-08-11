@@ -10,3 +10,4 @@ Analyzing data in R
   * Hierarchical cluster analysis
   * K Means cluster analysis
 * Standardization
+* Shapiro–Wilk test
