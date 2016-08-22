@@ -36,3 +36,26 @@ t.test(d$PRICE[d$COR == 1], d$PRICE[d$COR == 0], alternative = "less", paired = 
 #    1000.318  1077.189 
 
 # В среднем дома на углу подешевле на 76.871, но это различие статистически не значимо
+
+# Критерий Манна-Уитни-Вилкоксона
+wilcox.test(d$PRICE[d$COR == 1], d$PRICE[d$COR == 0],
+            alternative = "less", paired = F, exact = F)
+# 	Wilcoxon rank sum test with continuity correction
+# 
+# data:  d$PRICE[d$COR == 1] and d$PRICE[d$COR == 0]
+# W = 1009, p-value = 0.4022
+# alternative hypothesis: true location shift is less than 0
+
+cor.test()
+# Pearson's product-moment correlation
+# 
+# data:  d$AGE and d$TAX
+# t = -2.441, df = 64, p-value = 0.01742
+# alternative hypothesis: true correlation is not equal to 0
+# 95 percent confidence interval:
+# -0.49865251 -0.05359519
+# sample estimates:
+#        cor 
+# -0.2918422
+# Гипотеза об отсутсвии взаимосвязи между возрастом дома и налогами отклоняется.
+# Взаимосвязь присутсвует, но незначительная.
