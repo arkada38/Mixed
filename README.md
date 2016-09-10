@@ -13,4 +13,6 @@ Analyzing data in R
 * Cluster analysis
   * Hierarchical cluster analysis
   * K Means cluster analysis
+* Pattern recognition
   * K-nearest neighbors algorithm
+  * Classification Tree
