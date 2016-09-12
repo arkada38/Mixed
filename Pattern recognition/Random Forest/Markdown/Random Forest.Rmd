@@ -1,0 +1,58 @@
+---
+title: "Random Forest"
+author: "Arkadiy Kuznetsov"
+date: "September 11, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Random Forest
+
+Подключение библиотек
+```{r library, message=FALSE, warning=FALSE}
+library(randomForest)
+library(party)
+```
+
+Установка зерна для воспроизведения результатов
+```{r main}
+set.seed(123)
+```
+
+Print some records from data set readingSkills
+```{r summary}
+head(readingSkills)
+tail(readingSkills)
+summary(readingSkills)
+```
+
+Create the forest
+```{r forest1}
+output.forest <- randomForest(nativeSpeaker ~ age + shoeSize + score,
+                              data = readingSkills, 
+                              ntree = 2000)
+```
+
+View the forest results
+```{r forest2}
+output.forest
+```
+
+Importance of each predictor
+```{r forest3}
+importance(output.forest)
+```
+
+```{r output, echo=FALSE}
+varImpPlot(output.forest)
+```
+
+## Predict sample
+```{r predict}
+test <- readingSkills[1:6, ]
+pred <- predict(output.forest, newdata = test)
+table(pred, test$nativeSpeaker)
+```
