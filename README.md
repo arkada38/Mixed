@@ -16,3 +16,4 @@ Analyzing data in R
     + K-nearest neighbors algorithm
     + Classification Tree
     + Random Forest
+    + Gradient boosting machine
