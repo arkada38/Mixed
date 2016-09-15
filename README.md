@@ -17,3 +17,4 @@ Analyzing data in R
     + Classification Tree
     + Random Forest
     + Gradient boosting machine
+* Factor analysis
