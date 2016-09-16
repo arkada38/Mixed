@@ -1,0 +1,35 @@
+---
+title: "Анализ данных"
+author: "Arkadiy Kuznetsov"
+output: 
+  html_document: 
+    fig_height: 6
+    fig_width: 8
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Регрессионный анализ
+[Wiki](https://ru.wikipedia.org/wiki/Регрессионный_анализ)
+
+*Регрессионный анализ* — статистический метод исследования влияния одной или нескольких независимых переменных 
+<code>X<sub>1</sub>, X<sub>2</sub>, ... , X<sub>p</sub></code> на зависимую переменную  `Y`  
+
+**Цели регрессионного анализа**
+
+1. Определение степени детерминированности вариации критериальной (зависимой) переменной предикторами (независимыми переменными)
+2. Предсказание значения зависимой переменной с помощью независимой(-ых)
+3. Определение вклада отдельных независимых переменных в вариацию зависимой
+
+*Регрессионный анализ* нельзя использовать для определения наличия связи между переменными, поскольку наличие такой связи и есть предпосылка для применения анализа.
+
+### Линейная регрессия
+
+## Links
+* [R Markdown](http://rmarkdown.rstudio.com/lesson-1.html)
+* [R Markdown Cheat Sheet](https://www.rstudio.org/links/r_markdown_cheat_sheet)
+* [R Markdown Reference Guide](https://www.rstudio.org/links/r_markdown_reference_guide)
+* [HTML Documents](http://rmarkdown.rstudio.com/html_document_format.html)
