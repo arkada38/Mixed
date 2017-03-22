@@ -1,5 +1,5 @@
-# Mixed (RStudio project)
-Analyzing data in R
+# Statistics (RStudio project)
+Analysing data in R
 
 ## Scripts
 * Basic statistics
